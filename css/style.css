@@ -1,10 +1,14 @@
 
 
+
 html,
 body {
 	height: 100%;
 	font-family: "Nunito Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
+	font-family: 'Caprasimo', cursive;
+	font-family: 'Jost', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -292,6 +296,11 @@ ol {
     justify-content: center;
     column-gap: 30px;
 }
+
+.Login header {
+	text-align: center;
+	font-size: 30px;
+}
 .form{
     position: absolute;
     max-width: 430px;
@@ -312,12 +321,8 @@ ol {
     opacity: 0;
     pointer-events: none;
 }
-header{
-    font-size: 28px;
-    font-weight: 600;
-    color: #0c0d0e;
-    text-align: center;
-}
+
+
 form{
     margin-top: 30px;
 }
@@ -345,38 +350,36 @@ form{
 .field input:focus{
     border-bottom-width: 2px;
 }
-.eye-icon{
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    font-size: 18px;
-    color: #8b8b8b;
-    cursor: pointer;
-    padding: 5px;
-}
+
 .field button{
     color: #fff;
     background-color: #111213;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-.field button:hover{
-    background-color: #CACACA;
+
+.field button_field a{
+	font-weight: bolder;
+	text-align: center;
+	text-decoration: none;
+}
+
+.forgot{
+	margin-top: 30px;
+}
+
+.forgot a{
+	margin-left: 100px;
 }
 .form-link{
-    text-align: center;
-    margin-top: 50px;
+	text-align: center;
+    margin-top: 30px;
 }
-.form-link span,
-.form-link label{
-	margin-left: 20px;
-}
+
 .form-link a{
     font-size: 14px;
     font-weight: 400;
     color: #232836;
-	margin-left: 50px;
 }
 .form a{
     color: #0171d3;
@@ -441,8 +444,7 @@ a.google span{
 
 .text{
 	margin-top: 10px;
-	text-align: center;
-	
+	text-align: center;	
 }
 @media screen and (max-width: 400px) {
     .form{
@@ -468,7 +470,6 @@ a.google span{
 .header__top__left p {
 	color: #ffffff;
 	margin-bottom: 0;
-	text-align: left;
 }
 
 .header__top__right {
@@ -546,7 +547,7 @@ a.google span{
 }
 
 .header__logo {
-	padding: 20px 0;
+	padding: 30px 0;
 }
 
 .header__logo a {
@@ -732,7 +733,7 @@ a.google span{
 }
 
 .hero__text h6 {
-	color: #e53637;
+	color: #fff;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -761,6 +762,7 @@ a.google span{
 }
 
 .hero__text p {
+	color: #111111;
 	font-size: 16px;
 	line-height: 28px;
 	margin-bottom: 35px;
@@ -802,6 +804,9 @@ a.google span{
 .hero__social a:last-child {
 	margin-right: 0;
 }
+
+
+
 
 /*---------------------
   Banner
